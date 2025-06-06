@@ -1,8 +1,8 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
-const sqlite3= require('sqlite3').verbose()
+import sqlite3 from 'sqlite3';
 
-const db= new sqlite3.Database(process.env.DATABASE_FILE)
+const db = new sqlite3.Database(process.env.DATABASE_FILE);
 
-
-module.exports = db
+export { db };
