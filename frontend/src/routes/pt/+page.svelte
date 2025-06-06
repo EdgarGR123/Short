@@ -13,7 +13,7 @@
 		event.preventDefault();
 
 		try {
-			const res = await fetch('http://localhost:3000/TakeLinks', {
+			const res = await fetch('https://tk.up.railway.app/TakeLinks', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
