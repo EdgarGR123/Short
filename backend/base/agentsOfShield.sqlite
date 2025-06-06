@@ -1,0 +1,6 @@
+CREATE TABLE URLS_CONVERTS (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    url_temporal TEXT NOT NULL,
+    url_new TEXT,
+    dates DATE DEFAULT (DATETIME('now')),
+)

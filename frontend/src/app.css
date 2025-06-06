@@ -1,0 +1,172 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* app.css or inside <style> */
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 2rem;
+}
+
+
+.page {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+	background-color: #111;
+	color: #eee;
+	margin: 0;
+	padding: 0;
+}
+
+form {
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
+	max-width: 400px;
+}
+
+input[type="text"] {
+  padding: 0.75rem 1rem;
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #fff;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #666;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #444;
+  transform: scale(1.03);
+}
+
+a {
+  color: #bbb;
+  text-decoration: none;
+  border-bottom: 1px dotted #bbb;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+img {
+  margin-top: 1rem;
+  width: 160px;
+  height: 160px;
+  animation: fadeIn 0.4s ease;
+}
+
+p {
+  margin: 0.5rem 0;
+  animation: fadeIn 0.3s ease;
+}
+
+footer {
+  border-top: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+	text-align: center;
+  background-color: transparent;
+	color: #666;
+	font-size: 0.9rem;
+	width: 100%;
+  padding: 1rem;
+}
+
+.link-about{
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  text-decoration-line: none;
+  border-bottom: none !important;
+}
+
+
+
+.copied-msg {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #333;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 3px;
+  border: #bbb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  z-index: 1000;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #eee;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.about-text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 1rem;
+  text-align: justify;
+  max-width: 600px;
+  animation: fadeIn 0.3s ease;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
